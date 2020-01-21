@@ -19,7 +19,7 @@ class PredictFire(object):
         # instead.
         print("[INFO] loading model...")
         self.model = load_model(config.MODEL_PATH)
-        self.cap = cv2.VideoCapture(0)
+        self.cap = cv2.VideoCapture('video.mp4')
         # If you decide to use video.mp4, you must have this file in the folder
         # as the main.py.
         # self.video = cv2.VideoCapture('video.mp4')
